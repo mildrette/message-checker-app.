@@ -59,6 +59,9 @@ var textInput by remember {mutableStateOf(" ")}
             Spacer( modifier = Modifier.height(16.dp))
 
             Text("Character Left : ${characterLeft(textInput.length)}")
+            if(isMessageTooLong(textInput.length)){
+                Text("Message Too Long", color = Color.Red)
+            }
 
             Spacer( modifier = Modifier.height(16.dp))
 
@@ -81,6 +84,9 @@ fun characterLeft(messageLength: Int): Int {
     return 160 - messageLength
 }
 
+fun isMessageTooLong(messageLength: Int) : Boolean{
+    return messageLength > 160
+}
 
 @Preview
 @Composable
