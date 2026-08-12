@@ -52,10 +52,7 @@ fun WelcomeView(){
 Text("Compose Massage")
             }
         }
-
     }
-
-
 }
 
 
