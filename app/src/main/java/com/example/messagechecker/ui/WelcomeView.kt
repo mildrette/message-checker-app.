@@ -26,6 +26,8 @@ import androidx.compose.runtime.setValue
 @Composable
 fun WelcomeView(){
 var textInput by remember { mutableStateOf(" ")}
+
+    var savedMessage by remember { mutableStateOf<String?>(null)}
     
     Row(modifier = Modifier
         .fillMaxSize()
@@ -59,7 +61,7 @@ var textInput by remember { mutableStateOf(" ")}
             Spacer( modifier = Modifier.height(16.dp))
 
             OutlinedButton(
-                onClick = {},
+                onClick = {savedMessage = textInput},
                 modifier = Modifier
                     .padding(16.dp)) { Text("Save Message")
             }
