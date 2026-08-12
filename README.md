@@ -1,5 +1,8 @@
 # Message Checker — Chat App
 
+<img width="520" height="339" alt="outcome" src="https://github.com/user-attachments/assets/1f8b241d-1c6c-4869-873e-650d013a4848" />
+
+
 A personal learning project to practice Kotlin and Jetpack Compose by building
 a simple chat-style app, step by step, connecting new concepts to real code.
 
