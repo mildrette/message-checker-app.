@@ -50,7 +50,11 @@ fun WelcomeView(){
                     .background(Color.Yellow)
             ) {
 Text("Compose Massage")
+
+
             }
+
+//            learning naviagation
         }
     }
 }
