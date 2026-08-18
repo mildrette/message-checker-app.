@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.example.messagechecker.ui.PlayGround
 import com.example.messagechecker.ui.WelcomeView
 import com.example.messagechecker.ui.theme.MessageCheckerTheme
 
@@ -17,7 +18,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             MessageCheckerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    WelcomeView()
+//                    WelcomeView()
+
+                    PlayGround()
                 }
             }
         }
