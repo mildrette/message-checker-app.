@@ -128,17 +128,6 @@ private val sections = listOf(
     ))
 )
 
-@OptIn(ExperimentalMaterial3Api::class)
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            ComposeCheatSheetTheme {
-                CheatSheetApp()
-            }
-        }
-    }
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
