@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 data class CheatSection(
     val title: String,
@@ -131,7 +132,9 @@ private val sections = listOf(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CheatSheetApp() {
+fun CheatSheetApp(
+    navController: NavController
+) {
     var search by rememberSaveable { mutableStateOf("") }
     var darkMode by rememberSaveable { mutableStateOf(false) }
 
@@ -295,8 +298,8 @@ fun ComposeCheatSheetTheme(content: @Composable () -> Unit) {
 }
 
 
-@Preview
-@Composable
-fun CheatSheetAppPreview(){
-    CheatSheetApp()
-}
+//@Preview
+//@Composable
+//fun CheatSheetAppPreview(){
+//    CheatSheetApp()
+//}
