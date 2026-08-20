@@ -28,7 +28,7 @@ fun Chat(navController: NavController){
         Text("Chat Screen")
 
 
-        Button(onClick = {navController.navigate("details")}){
+        Button(onClick = {navController.navigate("details/this is the last page Mildred, just click the last button")}){
             Text("Send")
         }
 
