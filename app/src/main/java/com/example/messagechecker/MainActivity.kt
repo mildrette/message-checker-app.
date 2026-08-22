@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                             WelcomeView(navController)
                         }
                         composable("chat") {
-                            Chat(navController)
+//                            Chat(navController)
 
                         }
                         composable("details") {
