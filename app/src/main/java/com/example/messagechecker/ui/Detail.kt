@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.messagechecker.ui.component.IconButton
 
 @Composable
 fun Details(navController: NavController){
@@ -30,15 +31,15 @@ fun Details(navController: NavController){
 
         Spacer(modifier = Modifier.padding(5.dp))
 
-        OutlinedButton(onClick = { navController.navigate("playground") }) {
+        OutlinedButton(onClick = {navController.navigate("message") }) {
             Text("Go to Details")
         }
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        OutlinedButton(onClick = { navController.popBackStack() }) {
-            Text("Go Back")
-        }
+        IconButton(onClick ={
+            navController.popBackStack()
+        })
     }
 }
 

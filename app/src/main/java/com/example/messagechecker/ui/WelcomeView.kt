@@ -45,17 +45,15 @@ fun WelcomeView(navController: NavController){
             Spacer(modifier = Modifier.height(30.dp))
 
             OutlinedButton(
-                onClick = {navController.navigate("Chat")},
+                onClick = { navController.navigate("chat")},
                 modifier = Modifier
                     .padding(16.dp)
                     .background(Color.Yellow)
             ) {
 Text("Compose Massage")
 
-
             }
 
-//            learning naviagation
         }
     }
 }

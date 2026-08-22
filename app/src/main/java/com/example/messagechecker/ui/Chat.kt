@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.messagechecker.ui.component.IconButton
 
 @Composable
 fun Chat(navController: NavController){
@@ -28,13 +29,13 @@ fun Chat(navController: NavController){
         Text("Chat Screen")
 
 
-        Button(onClick = {navController.navigate("details/this is the last page Mildred, just click the last button")}){
+        Button(onClick = { navController.navigate("details")}){
             Text("Send")
         }
 
-        Button(onClick = {navController.popBackStack()}){
-            Text("GO Back")
-        }
+        IconButton(onClick = {navController.popBackStack()})
+
+
     }
     }
 

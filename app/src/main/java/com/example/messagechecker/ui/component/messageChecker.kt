@@ -21,9 +21,10 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import androidx.navigation.NavController
 
 @Composable
-fun MessageChecker(){
+fun MessageChecker(navController: NavController){
 
     var textInput by remember {mutableStateOf(" ")}
 
@@ -73,6 +74,8 @@ fun MessageChecker(){
                     .padding(16.dp)) { Text("Save Message")
             }
 
+            IconButton(onClick = { navController.popBackStack()})
+
             Divider(modifier = Modifier.padding(16.dp))
 
         }
@@ -87,9 +90,9 @@ fun isMessageTooLong(messageLength: Int) : Boolean{
     return messageLength > 160
 }
 
-@Preview
-@Composable
-fun ViewPreview(){
-    MessageChecker()
-}
+//@Preview
+//@Composable
+//fun ViewPreview(){
+//    MessageChecker()
+//}
 
