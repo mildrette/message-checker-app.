@@ -66,3 +66,8 @@ Checks whether a typed message fits within a 160-character SMS limit, and shows 
 - Add a "Save message" button with conditional logic (mark messages as ok or too long)
 - Store saved messages in a list
 - Add null safety for showing the last saved draft
+
+
+### what is LazyColumn?? 
+
+my next lesson
