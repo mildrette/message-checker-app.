@@ -95,7 +95,7 @@ fun Chat() {
                 onClick = {
                 }
             ) {
-                Text("Back")
+                Text("Back ")
             }
         }
     }

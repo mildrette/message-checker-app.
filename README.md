@@ -71,3 +71,23 @@ Checks whether a typed message fits within a 160-character SMS limit, and shows 
 ### what is LazyColumn?? 
 
 my next lesson
+
+
+Here's the full list, start to finish:
+
+Kotlin basics — variables, data types, conditionals, functions, data structures, input/output (done)
+Null safety — ?, ?., ?:, !! (done)
+Core layout composables — Column, Row, Box, Modifier, Spacer, Divider (done)
+Basic state — mutableStateOf, remember, by (done)
+Navigation — NavController, NavHost, passing data between screens (done)
+More state handling — mutableStateListOf, derivedStateOf, state hoisting
+Input & forms — TextField, OutlinedTextField, keyboard options, validation
+Lists — LazyColumn, LazyRow, items(), keys
+Layout & sizing — Modifier.weight(), fillMaxWidth/Height, padding, Arrangement, Alignment
+ViewModel + state management — ViewModel, StateFlow/State, viewModel()
+Side effects — LaunchedEffect, DisposableEffect, rememberCoroutineScope
+Networking — Retrofit or Ktor, API calls, loading/error/success states
+Local storage — Room database or DataStore
+Theming — MaterialTheme, custom colors/typography, dark mode
+Animations — animate*AsState, AnimatedVisibility, transitions
+Testing — Compose testing APIs, semantic matchers
