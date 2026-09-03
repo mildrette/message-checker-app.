@@ -13,22 +13,29 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Button
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun Random(){
     val greetings = "Hello Mildred"
-    Column {
+    Column(modifier = Modifier.fillMaxSize().background(Color.LightGray).padding(40.dp)) {
         Text(greetings)
         Text(" I am learning JetPack Compose")
+        Spacer(modifier = Modifier.padding(10.dp))
         Button(onClick = {}){
             Text("Click Here")
         }
-    }
 
-    Row{
-        Text("Apple")
-        Text("Bananas")
-        Text("Pears")
+        Spacer(modifier = Modifier.padding(10.dp))
+//        i showed up
+
+        Row{
+            Text("Apple")
+            Spacer(modifier = Modifier.weight(16.dp))
+            Text("Bananas")
+            Spacer(modifier = Modifier.padding(10.dp))
+            Text("Pears")
+        }
     }
 }
 
